@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Galerija Tec Dive Subotica — fotografije zarona, obuka i putovanja." />
+  <title>Galerija — Tec Dive Subotica</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <div id="site-header"></div>
+
+  <main>
+
+    <!-- PAGE HERO -->
+    <div class="page-hero">
+      <div class="container">
+        <div class="page-hero-inner">
+          <nav class="breadcrumb" aria-label="Breadcrumb">
+            <a href="/index.html">Početna</a>
+            <span class="breadcrumb-sep" aria-hidden="true">›</span>
+            <span class="breadcrumb-current" aria-current="page">Galerija</span>
+          </nav>
+          <h1>Galerija</h1>
+          <p class="page-hero-desc">Fotografije zarona, obuka i putovanja našeg kluba.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- GALLERY -->
+    <section class="section">
+      <div class="container">
+
+        <!-- Filter buttons -->
+        <div class="gallery-filters" role="group" aria-label="Filteri galerije">
+          <button class="gallery-filter-btn active" data-filter="all">Sve</button>
+          <button class="gallery-filter-btn" data-filter="zaroni">Zaroni</button>
+          <button class="gallery-filter-btn" data-filter="obuke">Obuke</button>
+          <button class="gallery-filter-btn" data-filter="putovanja">Putovanja</button>
+        </div>
+
+        <!-- Gallery grid -->
+        <div class="gallery-grid" id="gallery-grid">
+
+          <div class="gallery-item" data-category="putovanja" data-no-lightbox>
+            <img src="https://i.guim.co.uk/img/media/a8d31418566a66cf6671a91b6da5489297bae764/0_327_5760_3456/master/5760.jpg?width=1200&height=900&quality=85&auto=format&fit=crop&s=e221a7ec85682f60ab54279691cf10fa" alt="Zaroni u Hrvatskoj" loading="lazy" />
+            <div style="position:absolute; top:0; left:0; right:0; padding:10px 12px; background:linear-gradient(to bottom, rgba(0,0,0,0.65), transparent); pointer-events:none;">
+              <span style="color:#fff; font-family:var(--font-heading); font-size:0.9375rem; font-weight:700;">Zaroni u Hrvatskoj</span>
+            </div>
+            <div class="gallery-item-overlay">
+              <div style="display:flex; flex-direction:column; gap:6px;">
+                <a href="https://youtu.be/MjE4L8fDD5s" target="_blank" rel="noopener noreferrer" style="color:#000; font-family:var(--font-heading); font-size:0.875rem; font-weight:700; background:#fff; padding:4px 10px; border-radius:4px; display:inline-block;">▶ Hrvatska — Vis</a>
+                <a href="https://youtu.be/Uuqr9Nj2OGg" target="_blank" rel="noopener noreferrer" style="color:#000; font-family:var(--font-heading); font-size:0.875rem; font-weight:700; background:#fff; padding:4px 10px; border-radius:4px; display:inline-block;">▶ Brioni</a>
+                <a href="https://youtu.be/Gcn_nb_0k1A" target="_blank" rel="noopener noreferrer" style="color:#000; font-family:var(--font-heading); font-size:0.875rem; font-weight:700; background:#fff; padding:4px 10px; border-radius:4px; display:inline-block;">▶ B 24</a>
+                <a href="https://youtu.be/TDnG-gGeO-Q" target="_blank" rel="noopener noreferrer" style="color:#000; font-family:var(--font-heading); font-size:0.875rem; font-weight:700; background:#fff; padding:4px 10px; border-radius:4px; display:inline-block;">▶ Vassilios</a>
+                <a href="https://youtu.be/cN2Bptoza8Y" target="_blank" rel="noopener noreferrer" style="color:#000; font-family:var(--font-heading); font-size:0.875rem; font-weight:700; background:#fff; padding:4px 10px; border-radius:4px; display:inline-block;">▶ Greben</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-category="zaroni" tabindex="0" role="button" aria-label="Otvori sliku: Zaron na Jadranu">
+            <img src="https://adriatic-cruising.com/images/hvar.jpg" alt="Ronioci na Jadranu" loading="lazy" />
+            <div style="position:absolute; top:0; left:0; right:0; padding:10px 12px; background:linear-gradient(to bottom, rgba(0,0,0,0.65), transparent); pointer-events:none;">
+              <span style="color:#fff; font-family:var(--font-heading); font-size:0.9375rem; font-weight:700;">Jadransko more</span>
+            </div>
+            <div class="gallery-item-overlay">
+              <span class="gallery-item-caption">Jadransko more</span>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-category="obuke" tabindex="0" role="button" aria-label="Otvori sliku: Obuka u bazenu">
+            <img src="img/gallery/obuka-01.jpg" alt="Obuka u bazenu" loading="lazy" />
+            <div style="position:absolute; top:0; left:0; right:0; padding:10px 12px; background:linear-gradient(to bottom, rgba(0,0,0,0.65), transparent); pointer-events:none;">
+              <span style="color:#fff; font-family:var(--font-heading); font-size:0.9375rem; font-weight:700;">Obuka — bazen</span>
+            </div>
+            <div class="gallery-item-overlay">
+              <span class="gallery-item-caption">Obuka — bazen</span>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-category="putovanja" tabindex="0" role="button" aria-label="Otvori sliku: Putovanje Malta">
+            <img src="img/gallery/putovanje-01.jpg" alt="Ronilačko putovanje na Maltu" loading="lazy" />
+            <div style="position:absolute; top:0; left:0; right:0; padding:10px 12px; background:linear-gradient(to bottom, rgba(0,0,0,0.65), transparent); pointer-events:none;">
+              <span style="color:#fff; font-family:var(--font-heading); font-size:0.9375rem; font-weight:700;">Malta 2023</span>
+            </div>
+            <div class="gallery-item-overlay">
+              <span class="gallery-item-caption">Malta 2023</span>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-category="zaroni" tabindex="0" role="button" aria-label="Otvori sliku: Tehničko ronjenje">
+            <img src="img/gallery/dive-02.jpg" alt="Tehničko ronjenje sa dvojnim bocama" loading="lazy" />
+            <div style="position:absolute; top:0; left:0; right:0; padding:10px 12px; background:linear-gradient(to bottom, rgba(0,0,0,0.65), transparent); pointer-events:none;">
+              <span style="color:#fff; font-family:var(--font-heading); font-size:0.9375rem; font-weight:700;">Tehničko ronjenje</span>
+            </div>
+            <div class="gallery-item-overlay">
+              <span class="gallery-item-caption">Tehničko ronjenje</span>
+            </div>
+          </div>
+
+
+          <div class="gallery-item" data-category="putovanja" tabindex="0" role="button" aria-label="Otvori sliku: Crveno more">
+            <img src="img/gallery/putovanje-02.jpg" alt="Zaroni u Crvenom moru" loading="lazy" />
+            <div style="position:absolute; top:0; left:0; right:0; padding:10px 12px; background:linear-gradient(to bottom, rgba(0,0,0,0.65), transparent); pointer-events:none;">
+              <span style="color:#fff; font-family:var(--font-heading); font-size:0.9375rem; font-weight:700;">Crveno more — Egipat</span>
+            </div>
+            <div class="gallery-item-overlay">
+              <span class="gallery-item-caption">Crveno more — Egipat</span>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-category="obuke" tabindex="0" role="button" aria-label="Otvori sliku: Sidemount obuka">
+            <img src="img/gallery/obuka-02.jpg" alt="Sidemount obuka" loading="lazy" />
+            <div style="position:absolute; top:0; left:0; right:0; padding:10px 12px; background:linear-gradient(to bottom, rgba(0,0,0,0.65), transparent); pointer-events:none;">
+              <span style="color:#fff; font-family:var(--font-heading); font-size:0.9375rem; font-weight:700;">Sidemount kurs</span>
+            </div>
+            <div class="gallery-item-overlay">
+              <span class="gallery-item-caption">Sidemount kurs</span>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-category="zaroni" tabindex="0" role="button" aria-label="Otvori sliku: Pećina">
+            <img src="img/gallery/dive-04.jpg" alt="Ronjenje u pećini" loading="lazy" />
+            <div style="position:absolute; top:0; left:0; right:0; padding:10px 12px; background:linear-gradient(to bottom, rgba(0,0,0,0.65), transparent); pointer-events:none;">
+              <span style="color:#fff; font-family:var(--font-heading); font-size:0.9375rem; font-weight:700;">Pećinsko ronjenje</span>
+            </div>
+            <div class="gallery-item-overlay">
+              <span class="gallery-item-caption">Pećinsko ronjenje</span>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-category="putovanja" tabindex="0" role="button" aria-label="Otvori sliku: Grčka">
+            <img src="img/gallery/putovanje-03.jpg" alt="Putovanje u Grčku" loading="lazy" />
+            <div style="position:absolute; top:0; left:0; right:0; padding:10px 12px; background:linear-gradient(to bottom, rgba(0,0,0,0.65), transparent); pointer-events:none;">
+              <span style="color:#fff; font-family:var(--font-heading); font-size:0.9375rem; font-weight:700;">Grčka — Zakynthos</span>
+            </div>
+            <div class="gallery-item-overlay">
+              <span class="gallery-item-caption">Grčka — Zakynthos</span>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-category="obuke" tabindex="0" role="button" aria-label="Otvori sliku: Briefing">
+            <img src="img/gallery/obuka-03.jpg" alt="Pre-dive briefing" loading="lazy" />
+            <div style="position:absolute; top:0; left:0; right:0; padding:10px 12px; background:linear-gradient(to bottom, rgba(0,0,0,0.65), transparent); pointer-events:none;">
+              <span style="color:#fff; font-family:var(--font-heading); font-size:0.9375rem; font-weight:700;">Pre-dive briefing</span>
+            </div>
+            <div class="gallery-item-overlay">
+              <span class="gallery-item-caption">Pre-dive briefing</span>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-category="zaroni" tabindex="0" role="button" aria-label="Otvori sliku: Noćno ronjenje">
+            <img src="img/gallery/dive-05.jpg" alt="Noćno ronjenje" loading="lazy" />
+            <div style="position:absolute; top:0; left:0; right:0; padding:10px 12px; background:linear-gradient(to bottom, rgba(0,0,0,0.65), transparent); pointer-events:none;">
+              <span style="color:#fff; font-family:var(--font-heading); font-size:0.9375rem; font-weight:700;">Noćno ronjenje</span>
+            </div>
+            <div class="gallery-item-overlay">
+              <span class="gallery-item-caption">Noćno ronjenje</span>
+            </div>
+          </div>
+
+
+        </div>
+        <!-- /gallery-grid -->
+
+        <!-- VIDEO LINKS -->
+        <div class="mt-48">
+          <h2 class="doc-category-title">Video</h2>
+          <ul class="doc-list">
+            <li class="doc-item">
+              <div class="doc-icon" aria-hidden="true">▶️</div>
+              <div class="doc-info">
+                <div class="doc-name">
+                  <a href="https://youtu.be/DVhh2GC8T_U" target="_blank" rel="noopener noreferrer" style="color: var(--color-text); transition: color 0.2s;">
+                    Bunar duša
+                  </a>
+                </div>
+              </div>
+              <div class="doc-download">
+                <a href="https://youtu.be/DVhh2GC8T_U" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+                  Gledaj ↗
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-banner">
+      <div class="container">
+        <h2>Pridružite se sledećem putovanju</h2>
+        <p>Kontaktirajte nas i saznajte gde ronjamo sledeće!</p>
+        <a href="/kontakt.html" class="btn btn-accent btn-lg">Kontaktirajte nas</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Pregledač slika">
+    <div class="lightbox-inner">
+      <img class="lightbox-img" src="" alt="" />
+      <p class="lightbox-caption"></p>
+    </div>
+    <button class="lightbox-close" aria-label="Zatvori">&times;</button>
+    <button class="lightbox-prev" aria-label="Prethodna slika">&#8592;</button>
+    <button class="lightbox-next" aria-label="Sledeća slika">&#8594;</button>
+  </div>
+
+  <div id="site-footer"></div>
+  <button id="back-to-top" aria-label="Nazad na vrh">↑</button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
