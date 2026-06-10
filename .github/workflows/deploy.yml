@@ -26,13 +26,20 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: eu-central-1
 
-      - name: Sync to S3
+      - name: Sync site to S3
         run: |
           aws s3 sync site/ s3://${{ secrets.S3_BUCKET_NAME }} \
             --delete \
             --cache-control "max-age=86400" \
             --exclude ".DS_Store" \
             --exclude "*.swp"
+
+      - name: Sync documents to S3
+        run: |
+          aws s3 sync Dokumenti/ s3://${{ secrets.S3_BUCKET_NAME }}/docs/ \
+            --delete \
+            --cache-control "max-age=3600" \
+            --exclude ".gitkeep"
 
       - name: Invalidate CloudFront cache
         run: |
