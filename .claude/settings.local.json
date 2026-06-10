@@ -1,7 +1,12 @@
 {
   "permissions": {
     "allow": [
-      "WebFetch(domain:tecdive.rs)"
+      "WebFetch(domain:tecdive.rs)",
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:api.github.com)",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "Bash(mkdir -p site)",
+      "Bash(mv index.html o-nama.html obuke.html kontakt.html dokumenti.html galerija.html 404.html css js img docs site/)"
     ]
   }
 }

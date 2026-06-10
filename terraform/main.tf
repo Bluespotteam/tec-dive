@@ -104,11 +104,12 @@ resource "aws_route53_record" "acm_validation" {
     }
   }
 
-  zone_id = aws_route53_zone.site.zone_id
-  name    = each.value.name
-  type    = each.value.type
-  records = [each.value.record]
-  ttl     = 60
+  zone_id         = aws_route53_zone.site.zone_id
+  name            = each.value.name
+  type            = each.value.type
+  records         = [each.value.record]
+  ttl             = 60
+  allow_overwrite = true
 }
 
 resource "aws_acm_certificate_validation" "site" {
